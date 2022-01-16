@@ -9,6 +9,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { Footer, Navbar } from '@app/components';
 import { getStripe } from '@app/utils';
 import { prisma } from '@app/utils/ssr';
+import { LocalizedText } from '@app/components/LocalizeText';
 
 type Props = {
   products: (Product & { prices: Price[] })[];
@@ -71,7 +72,7 @@ const Page: NextPage<Props> = ({ products }) => {
       <div className="px-4 py-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-6xl font-extrabold text-gray-800 sm:text-center">
-            Pricing Plans
+            <LocalizedText t={'pricing'} />
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center">
             Start building for free, then add a site plan to go live. Account
