@@ -1,3 +1,7 @@
 {
-    "pricing": "Pricing Plans"
+    "PRICING_PLAN": "Pricing Plans",
+    "PRICING_DESCRIPTION": "Start building for free, then add a site plan to go live. Account plans unlock additional features.",
+    "MONTHLY_BILLING": "Monthly billing",
+    "YEARLY_BILLING": "Yearly billing",
+    "BUY": "Buy"
 }

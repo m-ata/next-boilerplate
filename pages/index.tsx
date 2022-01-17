@@ -72,11 +72,10 @@ const Page: NextPage<Props> = ({ products }) => {
       <div className="px-4 py-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-6xl font-extrabold text-gray-800 sm:text-center">
-            <LocalizedText t={'pricing'} />
+            <LocalizedText t={'PRICING_PLAN'} />
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center">
-            Start building for free, then add a site plan to go live. Account
-            plans unlock additional features.
+            <LocalizedText t={'PRICING_DESCRIPTION'} />
           </p>
           <div className="relative self-center mt-6 bg-gray-100 rounded-lg p-0.5 flex sm:mt-8">
             <button
@@ -91,7 +90,7 @@ const Page: NextPage<Props> = ({ products }) => {
                 }
               )}
             >
-              Monthly billing
+              <LocalizedText t={'MONTHLY_BILLING'} />
             </button>
             <button
               onClick={() => setBillingInterval('year')}
@@ -105,7 +104,7 @@ const Page: NextPage<Props> = ({ products }) => {
                 }
               )}
             >
-              Yearly billing
+              <LocalizedText t={'YEARLY_BILLING'} />
             </button>
           </div>
         </div>
@@ -157,7 +156,7 @@ const Page: NextPage<Props> = ({ products }) => {
                       onClick={() => handlePricingClick(price.id)}
                       className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white bg-gray-900 border border-black rounded-md hover:bg-gray-700 hover:cursor-pointer"
                     >
-                      Buy {product.name}
+                      <LocalizedText t={'BUY'} /> {product.name}
                     </a>
                   </div>
                   <div className="px-6 pt-6 pb-8">

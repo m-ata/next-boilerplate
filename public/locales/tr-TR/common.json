@@ -1,3 +1,7 @@
 {
-    "pricing": "Fiyatlandırma Planları"
+    "PRICING_PLAN": "Fiyatlandırma Planları",
+    "PRICING_DESCRIPTION": "Ücretsiz olarak oluşturmaya başlayın, ardından hayata geçirmek için bir site planı ekleyin. Hesap planları ek özelliklerin kilidini açar.",
+    "MONTHLY_BILLING": "Aylık faturalandırma",
+    "YEARLY_BILLING": "Yıllık faturalandırma",
+    "BUY": "Satın almak"
 }
