@@ -11,5 +11,14 @@
         "SIGN_OUT": "Kapat oturumu",
         "OPEN_MAIN_MENU": "Ana menüyü aç",
         "OPEN_USER_MENU": "Kullanıcı menüsünü aç"
+    },
+    "ACCOUNT": {
+        "ACCOUNT": "Hesap",
+        "STRIPE_BILLING": "Basitleştirilmiş bir faturalandırma için Stripe ile ortaklık kurduk.",
+        "MANAGE_SUBSCRIPTION": "Aboneliği yönet",
+        "SUBSCRIPTION_END": "Aboneliğiniz sona erecek ",
+        "LOREM_IPSUM": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.",
+        "CHANGE_PLAN": "Plan değiştir",
+        "SUBSCRIBE": "Abone"
     }
 }
