@@ -3,5 +3,13 @@
     "PRICING_DESCRIPTION": "Ücretsiz olarak oluşturmaya başlayın, ardından hayata geçirmek için bir site planı ekleyin. Hesap planları ek özelliklerin kilidini açar.",
     "MONTHLY_BILLING": "Aylık faturalandırma",
     "YEARLY_BILLING": "Yıllık faturalandırma",
-    "BUY": "Satın almak"
+    "BUY": "Satın almak",
+    "NAVBAR": {
+        "PRICING": "Fiyatlandırmalar",
+        "ACCOUNT": "Hesap",
+        "SIGN_IN": "Kayıt olmak",
+        "SIGN_OUT": "Kapat oturumu",
+        "OPEN_MAIN_MENU": "Ana menüyü aç",
+        "OPEN_USER_MENU": "Kullanıcı menüsünü aç"
+    }
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { signOut, useSession } from 'next-auth/react';
 import React, { Fragment } from 'react';
+import { LocalizedText } from './LocalizeText';
 
 const navigation = [
   { name: 'Pricings', href: '/', current: true },
@@ -23,7 +24,7 @@ const Component = () => {
             <div className="relative flex justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                  <span className="sr-only">Open main menu</span>
+                  <span className="sr-only"> <LocalizedText t={'NAVBAR.OPEN_MAIN_MENU'} /> </span>
                   {open ? (
                     <XIcon className="block w-6 h-6" aria-hidden="true" />
                   ) : (
@@ -56,7 +57,7 @@ const Component = () => {
                         }
                       )}
                     >
-                      Pricings
+                      <LocalizedText t={'NAVBAR.PRICING'} />
                     </a>
                   </Link>
 
@@ -71,7 +72,7 @@ const Component = () => {
                         }
                       )}
                     >
-                      Account
+                      <LocalizedText t={'NAVBAR.ACCOUNT'} />
                     </a>
                   </Link>
                 </div>
@@ -82,7 +83,7 @@ const Component = () => {
                   <Menu as="div" className="relative ml-3">
                     <div>
                       <Menu.Button className="flex text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        <span className="sr-only">Open user menu</span>
+                        <span className="sr-only"> <LocalizedText t={'NAVBAR.OPEN_MAIN_MENU'} /> </span>
                         <img
                           className="w-8 h-8 rounded-full"
                           src={
@@ -112,7 +113,7 @@ const Component = () => {
                                   'block px-4 py-2 text-sm text-gray-700'
                                 )}
                               >
-                                Account
+                                <LocalizedText t={'NAVBAR.ACCOUNT'} />
                               </a>
                             </Link>
                           )}
@@ -126,7 +127,7 @@ const Component = () => {
                                 'block px-4 py-2 text-sm text-gray-700'
                               )}
                             >
-                              Sign out
+                              <LocalizedText t={'NAVBAR.SIGN_OUT'} />
                             </a>
                           )}
                         </Menu.Item>
@@ -135,7 +136,7 @@ const Component = () => {
                   </Menu>
                 ) : (
                   <Link href="/api/auth/signin">
-                    <a>Sign in</a>
+                    <a><LocalizedText t={'NAVBAR.SIGN_IN'} /></a>
                   </Link>
                 )}
               </div>
@@ -148,12 +149,12 @@ const Component = () => {
 
               <Link href="/">
                 <a className="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50">
-                  Pricings
+                <LocalizedText t={'NAVBAR.PRICING'} />
                 </a>
               </Link>
               <Link href="/account">
                 <a className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700">
-                  Account
+                <LocalizedText t={'NAVBAR.ACCOUNT'} />
                 </a>
               </Link>
             </div>
