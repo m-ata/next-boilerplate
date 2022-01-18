@@ -1,4 +1,4 @@
-export const serverRuntimeConfig = {
+const serverRuntimeConfig = {
     localeSubpaths: {
         'en': 'en',
         'tr-TR': 'tr-TR',
@@ -6,10 +6,14 @@ export const serverRuntimeConfig = {
     },
 };
 
-export const publicRuntimeConfig = {
+const publicRuntimeConfig = {
     localeSubpaths: {
         'en': 'en',
         'tr-TR': 'tr-TR',
         'en-GB': 'en-GB',
     },
 };
+module.exports = {
+    serverRuntimeConfig,
+    publicRuntimeConfig
+}
